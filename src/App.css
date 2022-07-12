@@ -14,14 +14,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #EEEEEE;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #000;
 }
 
 .App-link {
@@ -35,4 +35,93 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+/**To do app style*/
+/**---------------*/
+/**Todo*/
+/**---------------*/
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #fff;
+  border-top: 1px solid #EEEEEE;
+  max-height: 80px;
+  height: 80px;
+  text-align: left;
+}
+.todo:hover {
+  background-color: #F7F7F7;
+}
+.listStyle {
+  list-style-position:inside;
+  margin:0;
+  padding:0;
+}
+.task_comp {
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+}
+.task_comp h4, h5 {
+  width: 230px;
+}
+.task_comp h5 {
+  color: #8C8C8C;
+}
+.todo_menu_icon {
+  cursor: pointer;
+}
+.todo_menu_icon:hover {
+  font-weight: bold;
+  color: #6200EE;
+}
+
+/**---------------*/
+/**Menu*/
+/**---------------*/
+.menu_container {
+  background-color: #fff;
+  box-shadow: 0px 2px 5px #888888;
+}
+
+/**---------------*/
+/**Header*/
+/**---------------*/
+.header_container {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+/**---------------*/
+/**add*/
+/**---------------*/
+.add_container {
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+.add_icon {
+  margin: 10px;
+  color: #6200EE;
+  font-size: 60px;
+}
+.add_icon:hover {
+  cursor: pointer;
+}
+
+/**---------------*/
+/**Main*/
+/**---------------*/
+.signOut {
+  background: #E0E0E0;
+  border: none;
+  box-shadow: 0px 2px 5px #888888;
+  margin: 15px;
 }
